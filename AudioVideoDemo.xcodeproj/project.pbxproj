@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		453BADCB192C6A716FE5B9AB /* libPods-AudioVideoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */; };
+		CF0427A323096D5400920D7F /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0427A223096D5400920D7F /* libmp3lame.a */; };
+		CF0427A72309715F00920D7F /* LameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0427A62309715F00920D7F /* LameController.swift */; };
+		CF0427AB230971CE00920D7F /* mp3_encoder_oc.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF0427AA230971CE00920D7F /* mp3_encoder_oc.mm */; };
+		CF0427B1230972BF00920D7F /* mp3_encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF0427AF230972BF00920D7F /* mp3_encoder.cpp */; };
 		CF4DEDC923090ECD00208768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DEDC823090ECD00208768 /* AppDelegate.swift */; };
 		CF4DEDD023090ECF00208768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4DEDCF23090ECF00208768 /* Assets.xcassets */; };
 		CF79963423090F82008F59A1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79962F23090F82008F59A1 /* BaseTabBarController.swift */; };
@@ -33,6 +37,14 @@
 		10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.release.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioVideoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CF0427A223096D5400920D7F /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		CF0427A423096D5E00920D7F /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		CF0427A62309715F00920D7F /* LameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LameController.swift; sourceTree = "<group>"; };
+		CF0427A9230971CE00920D7F /* mp3_encoder_oc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp3_encoder_oc.h; sourceTree = "<group>"; };
+		CF0427AA230971CE00920D7F /* mp3_encoder_oc.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = mp3_encoder_oc.mm; sourceTree = "<group>"; };
+		CF0427AF230972BF00920D7F /* mp3_encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp3_encoder.cpp; sourceTree = "<group>"; };
+		CF0427B0230972BF00920D7F /* mp3_encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mp3_encoder.hpp; sourceTree = "<group>"; };
+		CF1B277C23092E3400901155 /* AudioVideoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioVideoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF4DEDC523090ECD00208768 /* AudioVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4DEDC823090ECD00208768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4DEDCF23090ECF00208768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453BADCB192C6A716FE5B9AB /* libPods-AudioVideoDemo.a in Frameworks */,
+				CF0427A323096D5400920D7F /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,43 @@
 				10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF0427A023096D3300920D7F /* AudioVideoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				CF0427A123096D4E00920D7F /* Lame */,
+			);
+			path = AudioVideoLibrary;
+			sourceTree = "<group>";
+		};
+		CF0427A123096D4E00920D7F /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				CF0427A423096D5E00920D7F /* lame.h */,
+				CF0427A223096D5400920D7F /* libmp3lame.a */,
+			);
+			path = Lame;
+			sourceTree = "<group>";
+		};
+		CF0427A52309714900920D7F /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				CF0427A8230971B200920D7F /* Lame */,
+			);
+			path = SubController;
+			sourceTree = "<group>";
+		};
+		CF0427A8230971B200920D7F /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				CF0427A62309715F00920D7F /* LameController.swift */,
+				CF0427A9230971CE00920D7F /* mp3_encoder_oc.h */,
+				CF0427AA230971CE00920D7F /* mp3_encoder_oc.mm */,
+				CF0427B0230972BF00920D7F /* mp3_encoder.hpp */,
+				CF0427AF230972BF00920D7F /* mp3_encoder.cpp */,
+			);
+			path = Lame;
 			sourceTree = "<group>";
 		};
 		CF4DEDBC23090ECD00208768 = {
@@ -99,6 +149,7 @@
 		CF4DEDC723090ECD00208768 /* AudioVideoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF0427A023096D3300920D7F /* AudioVideoLibrary */,
 				CF4DEDC823090ECD00208768 /* AppDelegate.swift */,
 				CF79963923090FBF008F59A1 /* CurrentDelegate.swift */,
 				CF79962E23090F82008F59A1 /* BaseViewController */,
@@ -107,6 +158,7 @@
 				CF79964F2309152C008F59A1 /* Utils */,
 				CF79964023091066008F59A1 /* Extension */,
 				CF799658230921F6008F59A1 /* Default.swift */,
+				CF1B277C23092E3400901155 /* AudioVideoDemo-Bridging-Header.h */,
 				CF4DEDCF23090ECF00208768 /* Assets.xcassets */,
 			);
 			path = AudioVideoDemo;
@@ -173,8 +225,8 @@
 		CF799650230921B2008F59A1 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				CF799651230921B2008F59A1 /* LanguageController.swift */,
 				CF799652230921B2008F59A1 /* SettingController.swift */,
+				CF799651230921B2008F59A1 /* LanguageController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -183,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				CF799656230921D8008F59A1 /* AudioVideoController.swift */,
+				CF0427A52309714900920D7F /* SubController */,
 			);
 			path = AudioVideo;
 			sourceTree = "<group>";
@@ -229,6 +282,7 @@
 				TargetAttributes = {
 					CF4DEDC423090ECD00208768 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -309,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0427A72309715F00920D7F /* LameController.swift in Sources */,
 				CF799654230921B2008F59A1 /* SettingController.swift in Sources */,
 				CF79964C230910BE008F59A1 /* LocalizationTool.swift in Sources */,
 				CF799657230921D8008F59A1 /* AudioVideoController.swift in Sources */,
@@ -319,6 +374,8 @@
 				CF79963523090F82008F59A1 /* BaseViewController.swift in Sources */,
 				CF79963723090F82008F59A1 /* BaseNavigationController.swift in Sources */,
 				CF799653230921B2008F59A1 /* LanguageController.swift in Sources */,
+				CF0427B1230972BF00920D7F /* mp3_encoder.cpp in Sources */,
+				CF0427AB230971CE00920D7F /* mp3_encoder_oc.mm in Sources */,
 				CF4DEDC923090ECD00208768 /* AppDelegate.swift in Sources */,
 				CF799659230921F6008F59A1 /* Default.swift in Sources */,
 				CF79963F2309101E008F59A1 /* RootTabBar.swift in Sources */,
@@ -402,6 +459,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -457,6 +515,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -465,18 +524,34 @@
 			baseConfigurationReference = 795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AudioVideoDemo/AudioVideoLibrary/Lame\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JGProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = AudioVideoDemo/InfoSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioVideoDemo/AudioVideoLibrary/Lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LFZ.AudioVideoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioVideoDemo/AudioVideoDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -485,18 +560,33 @@
 			baseConfigurationReference = 10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AudioVideoDemo/AudioVideoLibrary/Lame\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/JGProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = AudioVideoDemo/InfoSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioVideoDemo/AudioVideoLibrary/Lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LFZ.AudioVideoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioVideoDemo/AudioVideoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};

@@ -9,3 +9,6 @@ setting.root.title="通用设置";
 setting.language.list.title="设置语言";
 setting.language.chinese="中文";
 setting.language.english="英文";
+
+// MARK: - AudioVideo
+audio.video.encoder.lame="Lame";
