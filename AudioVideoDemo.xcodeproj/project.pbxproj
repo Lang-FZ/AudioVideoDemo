@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453BADCB192C6A716FE5B9AB /* libPods-AudioVideoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */; };
+		CF4DEDC923090ECD00208768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DEDC823090ECD00208768 /* AppDelegate.swift */; };
+		CF4DEDD023090ECF00208768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4DEDCF23090ECF00208768 /* Assets.xcassets */; };
+		CF79963423090F82008F59A1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79962F23090F82008F59A1 /* BaseTabBarController.swift */; };
+		CF79963523090F82008F59A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963023090F82008F59A1 /* BaseViewController.swift */; };
+		CF79963623090F82008F59A1 /* BaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963123090F82008F59A1 /* BaseListModel.swift */; };
+		CF79963723090F82008F59A1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963223090F82008F59A1 /* BaseNavigationController.swift */; };
+		CF79963823090F82008F59A1 /* BaseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963323090F82008F59A1 /* BaseListCell.swift */; };
+		CF79963A23090FBF008F59A1 /* CurrentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963923090FBF008F59A1 /* CurrentDelegate.swift */; };
+		CF79963E2309101E008F59A1 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963C2309101D008F59A1 /* RootTabBarController.swift */; };
+		CF79963F2309101E008F59A1 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79963D2309101E008F59A1 /* RootTabBar.swift */; };
+		CF79964323091066008F59A1 /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79964123091066008F59A1 /* Extension+UIFont.swift */; };
+		CF79964423091066008F59A1 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79964223091066008F59A1 /* Extension+UIColor.swift */; };
+		CF79964B230910BE008F59A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF799647230910BE008F59A1 /* Localizable.strings */; };
+		CF79964C230910BE008F59A1 /* LocalizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79964A230910BE008F59A1 /* LocalizationTool.swift */; };
+		CF79964E23091514008F59A1 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF79964D23091514008F59A1 /* ProgressHUD.swift */; };
+		CF799653230921B2008F59A1 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF799651230921B2008F59A1 /* LanguageController.swift */; };
+		CF799654230921B2008F59A1 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF799652230921B2008F59A1 /* SettingController.swift */; };
+		CF799657230921D8008F59A1 /* AudioVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF799656230921D8008F59A1 /* AudioVideoController.swift */; };
+		CF799659230921F6008F59A1 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF799658230921F6008F59A1 /* Default.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.release.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioVideoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4DEDC523090ECD00208768 /* AudioVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4DEDC823090ECD00208768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF4DEDCF23090ECF00208768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF4DEDD423090ECF00208768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF79962F23090F82008F59A1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		CF79963023090F82008F59A1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CF79963123090F82008F59A1 /* BaseListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListModel.swift; sourceTree = "<group>"; };
+		CF79963223090F82008F59A1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		CF79963323090F82008F59A1 /* BaseListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListCell.swift; sourceTree = "<group>"; };
+		CF79963923090FBF008F59A1 /* CurrentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentDelegate.swift; sourceTree = "<group>"; };
+		CF79963C2309101D008F59A1 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		CF79963D2309101E008F59A1 /* RootTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
+		CF79964123091066008F59A1 /* Extension+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
+		CF79964223091066008F59A1 /* Extension+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		CF799648230910BE008F59A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CF799649230910BE008F59A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF79964A230910BE008F59A1 /* LocalizationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTool.swift; sourceTree = "<group>"; };
+		CF79964D23091514008F59A1 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		CF799651230921B2008F59A1 /* LanguageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
+		CF799652230921B2008F59A1 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		CF799656230921D8008F59A1 /* AudioVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVideoController.swift; sourceTree = "<group>"; };
+		CF799658230921F6008F59A1 /* Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF4DEDC223090ECD00208768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453BADCB192C6A716FE5B9AB /* libPods-AudioVideoDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3E16BC2C35B9F9564C3F9CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */,
+				10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF4DEDBC23090ECD00208768 = {
+			isa = PBXGroup;
+			children = (
+				CF4DEDC723090ECD00208768 /* AudioVideoDemo */,
+				CF4DEDC623090ECD00208768 /* Products */,
+				A3E16BC2C35B9F9564C3F9CA /* Pods */,
+				D82DD88C41DCCF777D43136C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4DEDC623090ECD00208768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF4DEDC523090ECD00208768 /* AudioVideoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF4DEDC723090ECD00208768 /* AudioVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF4DEDC823090ECD00208768 /* AppDelegate.swift */,
+				CF79963923090FBF008F59A1 /* CurrentDelegate.swift */,
+				CF79962E23090F82008F59A1 /* BaseViewController */,
+				CF79963B23090FE2008F59A1 /* Root */,
+				CF7996452309109D008F59A1 /* InfoSet */,
+				CF79964F2309152C008F59A1 /* Utils */,
+				CF79964023091066008F59A1 /* Extension */,
+				CF799658230921F6008F59A1 /* Default.swift */,
+				CF4DEDCF23090ECF00208768 /* Assets.xcassets */,
+			);
+			path = AudioVideoDemo;
+			sourceTree = "<group>";
+		};
+		CF79962E23090F82008F59A1 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF79962F23090F82008F59A1 /* BaseTabBarController.swift */,
+				CF79963023090F82008F59A1 /* BaseViewController.swift */,
+				CF79963123090F82008F59A1 /* BaseListModel.swift */,
+				CF79963223090F82008F59A1 /* BaseNavigationController.swift */,
+				CF79963323090F82008F59A1 /* BaseListCell.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CF79963B23090FE2008F59A1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CF79963C2309101D008F59A1 /* RootTabBarController.swift */,
+				CF79963D2309101E008F59A1 /* RootTabBar.swift */,
+				CF799655230921C5008F59A1 /* AudioVideo */,
+				CF799650230921B2008F59A1 /* Setting */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CF79964023091066008F59A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF79964123091066008F59A1 /* Extension+UIFont.swift */,
+				CF79964223091066008F59A1 /* Extension+UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CF7996452309109D008F59A1 /* InfoSet */ = {
+			isa = PBXGroup;
+			children = (
+				CF4DEDD423090ECF00208768 /* Info.plist */,
+				CF799646230910BE008F59A1 /* Localizable */,
+			);
+			path = InfoSet;
+			sourceTree = "<group>";
+		};
+		CF799646230910BE008F59A1 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				CF799647230910BE008F59A1 /* Localizable.strings */,
+				CF79964A230910BE008F59A1 /* LocalizationTool.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		CF79964F2309152C008F59A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF79964D23091514008F59A1 /* ProgressHUD.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF799650230921B2008F59A1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CF799651230921B2008F59A1 /* LanguageController.swift */,
+				CF799652230921B2008F59A1 /* SettingController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CF799655230921C5008F59A1 /* AudioVideo */ = {
+			isa = PBXGroup;
+			children = (
+				CF799656230921D8008F59A1 /* AudioVideoController.swift */,
+			);
+			path = AudioVideo;
+			sourceTree = "<group>";
+		};
+		D82DD88C41DCCF777D43136C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF4DEDC423090ECD00208768 /* AudioVideoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4DEDD723090ECF00208768 /* Build configuration list for PBXNativeTarget "AudioVideoDemo" */;
+			buildPhases = (
+				216B330DD697484554F64D66 /* [CP] Check Pods Manifest.lock */,
+				CF4DEDC123090ECD00208768 /* Sources */,
+				CF4DEDC223090ECD00208768 /* Frameworks */,
+				CF4DEDC323090ECD00208768 /* Resources */,
+				B93FAA2115CA7430E0705F7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioVideoDemo;
+			productName = AudioVideoDemo;
+			productReference = CF4DEDC523090ECD00208768 /* AudioVideoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF4DEDBD23090ECD00208768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = LFZ;
+				TargetAttributes = {
+					CF4DEDC423090ECD00208768 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CF4DEDC023090ECD00208768 /* Build configuration list for PBXProject "AudioVideoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = CF4DEDBC23090ECD00208768;
+			productRefGroup = CF4DEDC623090ECD00208768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF4DEDC423090ECD00208768 /* AudioVideoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF4DEDC323090ECD00208768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF79964B230910BE008F59A1 /* Localizable.strings in Resources */,
+				CF4DEDD023090ECF00208768 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		216B330DD697484554F64D66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioVideoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93FAA2115CA7430E0705F7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF4DEDC123090ECD00208768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF799654230921B2008F59A1 /* SettingController.swift in Sources */,
+				CF79964C230910BE008F59A1 /* LocalizationTool.swift in Sources */,
+				CF799657230921D8008F59A1 /* AudioVideoController.swift in Sources */,
+				CF79964323091066008F59A1 /* Extension+UIFont.swift in Sources */,
+				CF79964E23091514008F59A1 /* ProgressHUD.swift in Sources */,
+				CF79963823090F82008F59A1 /* BaseListCell.swift in Sources */,
+				CF79963E2309101E008F59A1 /* RootTabBarController.swift in Sources */,
+				CF79963523090F82008F59A1 /* BaseViewController.swift in Sources */,
+				CF79963723090F82008F59A1 /* BaseNavigationController.swift in Sources */,
+				CF799653230921B2008F59A1 /* LanguageController.swift in Sources */,
+				CF4DEDC923090ECD00208768 /* AppDelegate.swift in Sources */,
+				CF799659230921F6008F59A1 /* Default.swift in Sources */,
+				CF79963F2309101E008F59A1 /* RootTabBar.swift in Sources */,
+				CF79963623090F82008F59A1 /* BaseListModel.swift in Sources */,
+				CF79963A23090FBF008F59A1 /* CurrentDelegate.swift in Sources */,
+				CF79963423090F82008F59A1 /* BaseTabBarController.swift in Sources */,
+				CF79964423091066008F59A1 /* Extension+UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF799647230910BE008F59A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF799648230910BE008F59A1 /* zh-Hans */,
+				CF799649230910BE008F59A1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF4DEDD523090ECF00208768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF4DEDD623090ECF00208768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF4DEDD823090ECF00208768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				INFOPLIST_FILE = AudioVideoDemo/InfoSet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFZ.AudioVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Debug;
+		};
+		CF4DEDD923090ECF00208768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				INFOPLIST_FILE = AudioVideoDemo/InfoSet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFZ.AudioVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF4DEDC023090ECD00208768 /* Build configuration list for PBXProject "AudioVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4DEDD523090ECF00208768 /* Debug */,
+				CF4DEDD623090ECF00208768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4DEDD723090ECF00208768 /* Build configuration list for PBXNativeTarget "AudioVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4DEDD823090ECF00208768 /* Debug */,
+				CF4DEDD923090ECF00208768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF4DEDBD23090ECD00208768 /* Project object */;
+}

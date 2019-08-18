@@ -1,0 +1,11 @@
+
+// MARK: - TabBarItem
+root.tab.bar.audio.video="音视频";
+root.tab.bar.setting="设置";
+// MARK: - RootNaviTitle
+audio.video.root.title="音视频练习";
+setting.root.title="通用设置";
+// MARK: - Setting
+setting.language.list.title="设置语言";
+setting.language.chinese="中文";
+setting.language.english="英文";

@@ -1,0 +1,6 @@
+module Pods_AudioVideoDemo {
+  umbrella header "Pods-AudioVideoDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
