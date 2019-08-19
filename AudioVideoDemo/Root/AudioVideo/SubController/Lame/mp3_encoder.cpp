@@ -54,12 +54,12 @@ void Mp3Encoder::Encode() {
         
         size_t wroteSize = lame_encode_buffer(lameClient, (short int *)leftBuffer, (short int *)rightBuffer, (int)(readBufferSize / 2), mp3_buffer, bufferSize);
         fwrite(mp3_buffer, 1, wroteSize, mp3File);
-        
-        delete [] buffer;
-        delete [] leftBuffer;
-        delete [] rightBuffer;
-        delete [] mp3_buffer;
     }
+    
+    delete [] buffer;
+    delete [] leftBuffer;
+    delete [] rightBuffer;
+    delete [] mp3_buffer;
 }
 
 void Mp3Encoder::Destory() {

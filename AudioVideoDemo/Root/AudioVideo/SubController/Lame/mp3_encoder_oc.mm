@@ -20,7 +20,7 @@
     NSString *mp3Str = [documentsDirectory stringByAppendingPathComponent:[[NSString alloc] initWithFormat:@"%@.mp3", name]];
     
     Mp3Encoder* encoder = new Mp3Encoder;
-    encoder->Init([pcmStr UTF8String], [mp3Str UTF8String], 44100, 2, 16);
+    encoder->Init([pcmStr UTF8String], [mp3Str UTF8String], 44100, 2, 16 * 1000);
     encoder->Encode();
     encoder->Destory();
 }
