@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453BADCB192C6A716FE5B9AB /* libPods-AudioVideoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */; };
+		5E0C7D70231E5AC400EA04D2 /* AudioUnitPracticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C7D6F231E5AC400EA04D2 /* AudioUnitPracticeController.swift */; };
 		CF0427A323096D5400920D7F /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0427A223096D5400920D7F /* libmp3lame.a */; };
 		CF0427A72309715F00920D7F /* LameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0427A62309715F00920D7F /* LameController.swift */; };
 		CF0427AB230971CE00920D7F /* mp3_encoder_oc.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF0427AA230971CE00920D7F /* mp3_encoder_oc.mm */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		10426F0FEE6B0A5396923A08 /* Pods-AudioVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.release.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5E0C7D6F231E5AC400EA04D2 /* AudioUnitPracticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitPracticeController.swift; sourceTree = "<group>"; };
 		72AC7C2E28B64E6B9795DD89 /* libPods-AudioVideoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioVideoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795719E90B1A89ACC16C5631 /* Pods-AudioVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVideoDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioVideoDemo/Pods-AudioVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0427A223096D5400920D7F /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				CF0427A8230971B200920D7F /* Lame */,
+				5E0C7D6F231E5AC400EA04D2 /* AudioUnitPracticeController.swift */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -795,6 +798,7 @@
 				CF0427B1230972BF00920D7F /* mp3_encoder.cpp in Sources */,
 				CF0427AB230971CE00920D7F /* mp3_encoder_oc.mm in Sources */,
 				CF4DEDC923090ECD00208768 /* AppDelegate.swift in Sources */,
+				5E0C7D70231E5AC400EA04D2 /* AudioUnitPracticeController.swift in Sources */,
 				CF799659230921F6008F59A1 /* Default.swift in Sources */,
 				CF79963F2309101E008F59A1 /* RootTabBar.swift in Sources */,
 				CF79963623090F82008F59A1 /* BaseListModel.swift in Sources */,

@@ -12,3 +12,4 @@ setting.language.english="English";
 
 // MARK: - AudioVideo
 audio.video.encoder.lame="Lame";
+audio.video.encoder.audio.unit="AudioUnit";

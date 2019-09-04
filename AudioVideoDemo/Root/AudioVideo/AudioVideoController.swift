@@ -23,6 +23,13 @@ class AudioVideoController: BaseViewController, HadTabBarProtocol {
         }
         model.data.append(model1)
         
+        let model2 = BaseListModel.init([:])
+        model2.title = "audio.video.encoder.audio.unit"
+        model2.action = { [weak self] (title) in
+            self?.pushAudioUnit(title)
+        }
+        model.data.append(model2)
+        
         return model
     }()
     
@@ -94,6 +101,14 @@ extension AudioVideoController {
         let lut = LameController()
         lut.title = title
         self.navigationController?.pushViewController(lut, animated: true)
+    }
+    
+    //TODO: AudioUnit 练习
+    private func pushAudioUnit(_ title:String) {
+        
+        let au = AudioUnitPracticeController()
+        au.title = title
+        self.navigationController?.pushViewController(au, animated: true)
     }
 }
 
