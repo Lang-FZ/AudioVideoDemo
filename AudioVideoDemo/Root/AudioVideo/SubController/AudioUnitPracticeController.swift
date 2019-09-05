@@ -62,9 +62,16 @@ class AudioUnitPracticeController: BaseViewController {
         //使用扬声器
         var status:OSStatus = noErr
         var oneFlag = 1
-        let busZero = 0
-        status = AudioUnitSetProperty(ioUnit, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Output, AudioUnitElement(busZero), &oneFlag, UInt32(MemoryLayout.size(ofValue: oneFlag)))
+        let busZero = UInt32(0)     //Element 0
+        status = AudioUnitSetProperty(ioUnit, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Output, busZero, &oneFlag, UInt32(MemoryLayout.size(ofValue: oneFlag)))
         checkStatus(status, "Could not Connect To Speaker", true)
+        
+        //启用麦克风
+        let busOne = UInt32(1)      //Element 1
+        status = AudioUnitSetProperty(ioUnit, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Input, busOne, &oneFlag, UInt32(MemoryLayout.size(ofValue: oneFlag)))
+        checkStatus(status, "Could not Connect To Microphone", true)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
