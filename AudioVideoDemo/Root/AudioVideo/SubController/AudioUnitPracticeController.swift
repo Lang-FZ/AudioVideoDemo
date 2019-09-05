@@ -42,14 +42,14 @@ class AudioUnitPracticeController: BaseViewController {
         var processingGraph:AUGraph?
         NewAUGraph(&processingGraph)
         
-        var ioNode:AUNode?
+        var ioNode:AUNode = AUNode()
         var ioUnitDescription = AudioComponentDescription.init(componentType: OSType.init(bitPattern: Int32(kAudioUnitType_Output)), componentSubType: OSType.init(bitPattern: Int32(kAudioUnitSubType_RemoteIO)), componentManufacturer: OSType.init(bitPattern: Int32(kAudioUnitManufacturer_Apple)), componentFlags: 0, componentFlagsMask: 0)
-        AUGraphAddNode(processingGraph!, &ioUnitDescription, &ioNode!)
-        
+        AUGraphAddNode(processingGraph!, &ioUnitDescription, &ioNode)
+
         AUGraphOpen(processingGraph!)
-        
+
         var ioUnit:AudioUnit?
-        AUGraphNodeInfo(processingGraph!, ioNode!, nil, &ioUnit)
+        AUGraphNodeInfo(processingGraph!, ioNode, nil, &ioUnit)
         
         return ioUnit!
     }()
@@ -59,7 +59,12 @@ class AudioUnitPracticeController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //使用扬声器
+        var status:OSStatus = noErr
+        var oneFlag = 1
+        let busZero = 0
+        status = AudioUnitSetProperty(ioUnit, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Output, AudioUnitElement(busZero), &oneFlag, UInt32(MemoryLayout.size(ofValue: oneFlag)))
+        checkStatus(status, "Could not Connect To Speaker", true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,5 +77,23 @@ class AudioUnitPracticeController: BaseViewController {
 
 extension AudioUnitPracticeController {
     
-    
+    private func checkStatus(_ status:OSStatus, _ message:String, _ fatal:Bool) {
+        
+        if status != noErr {
+            
+            var fourCC:[Character] = [Character](repeating: Character(UnicodeScalar(0)), count: 16)
+            fourCC[0] = Character(UnicodeScalar(CFSwapInt32HostToBig(UInt32(status))) ?? UnicodeScalar(0))
+            fourCC[4] = Character(UnicodeScalar(0))
+            
+            if Bool(truncating: NSNumber(value: isprint(Int32(fourCC[0].unicodeScalars.first?.value ?? 0)))) && Bool(truncating: NSNumber(value: isprint(Int32(fourCC[1].unicodeScalars.first?.value ?? 0)))) && Bool(truncating: NSNumber(value: isprint(Int32(fourCC[2].unicodeScalars.first?.value ?? 0)))) && Bool(truncating: NSNumber(value: isprint(Int32(fourCC[3].unicodeScalars.first?.value ?? 0)))) {
+                print("\(message) : " + String.init(format: "%s", fourCC))
+            } else {
+                print("\(message) : " + String.init(format: "%d", Int(status)))
+            }
+            
+            if fatal {
+                exit(-1)
+            }
+        }
+    }
 }
