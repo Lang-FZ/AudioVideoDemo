@@ -71,6 +71,20 @@ class AudioUnitPracticeController: BaseViewController {
         status = AudioUnitSetProperty(ioUnit, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Input, busOne, &oneFlag, UInt32(MemoryLayout.size(ofValue: oneFlag)))
         checkStatus(status, "Could not Connect To Microphone", true)
         
+        let bytesPerSample = UInt32(MemoryLayout.size(ofValue: Float32.self))
+        var asbd = AudioStreamBasicDescription()
+        bzero(&asbd, MemoryLayout.size(ofValue: asbd))
+        asbd.mFormatID = kAudioFormatLinearPCM
+        asbd.mSampleRate = 44100.0
+        asbd.mChannelsPerFrame = 2      //双声道
+        asbd.mFramesPerPacket = 1
+        asbd.mFormatFlags = CAFFormatFlags.init(arrayLiteral: CAFFormatFlags.Element(rawValue: kAudioFormatFlagsNativeFloatPacked), CAFFormatFlags.Element(rawValue: kAudioFormatFlagIsNonInterleaved)).rawValue
+        asbd.mBitsPerChannel = 8 * bytesPerSample
+        asbd.mBytesPerFrame = bytesPerSample
+        asbd.mBytesPerPacket = bytesPerSample
+        
+        AudioUnitSetProperty(ioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, AudioUnitElement(bitPattern: 1), &asbd, UInt32(MemoryLayout.size(ofValue: asbd)))
+        
         
     }
     
